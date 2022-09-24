@@ -67,6 +67,7 @@
 ![Architecture]()
 
 ### 기술 스택
+![image](https://user-images.githubusercontent.com/81502140/192085966-760233ed-39c0-442b-9814-2ed1f077afcf.png)
 <details>
 <summary>Front-End</summary>
 <div markdown="1">
