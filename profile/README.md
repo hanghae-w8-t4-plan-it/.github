@@ -4,7 +4,7 @@
 
 ## 📌 링크
 [Planit 링크](예정)  
-[Front-End Repo 링크](https://github.com/hanghae-w8-t4-plan-it/Front-end)  
+[Front-End Repo 링크](https://github.com/hanghae-w8-t4-plan-it/frontend)  
 [Back-End Repo 링크](https://github.com/hanghae-w8-t4-plan-it/backend)  
 [Notion 링크](https://www.notion.so/4-d8656c9684f5477c917a81a0747e5144)  
 [소개 영상](예정)  
