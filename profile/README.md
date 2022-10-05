@@ -1,5 +1,6 @@
 # PLAN IT
 <br/><br/>
+![thumb](https://user-images.githubusercontent.com/48500149/194040185-1ac520d2-5fa9-4a7c-94ae-3b236c0791a3.png)
 
 
 ## 📌 링크
