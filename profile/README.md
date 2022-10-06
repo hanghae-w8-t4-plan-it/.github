@@ -147,8 +147,10 @@ Planit에서 To-do를 완료하고 행성을 키워보세요!
 </br>
 
 ## 🤗 유저 테스트 & 피드백
+![image](https://user-images.githubusercontent.com/81502140/194344046-2924694d-87dc-4924-8643-c47e221c448b.png)
 
 ## 🤗 유저 만족도
+![image](https://user-images.githubusercontent.com/81502140/194344080-cab3e1ac-ce8d-4ef2-831a-d764937f76cb.png)
 
 ## UT 피드백 이후 추가&개선 기능
 
