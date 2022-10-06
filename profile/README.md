@@ -29,7 +29,7 @@ Planit에서 To-do를 완료하고 행성을 키워보세요!
 |:---:|:---:|:---:|:---|
 |신원혁|Back-End|https://github.com/god1hyuk|[리더]</br>1. CICD/무중단배포 </br>2. 로그인/회원가입/온보딩 </br>3. 메인페이지 </br>4. 채팅 </br>5. 친구목록/친구페이지 </br>6. 알림 7.인터셉터 로직|
 |박종익|Back-End|https://github.com/ParkJong-ic|1. 투두 페이지</br>2. 커뮤니티 페이지</br>3. 이벤트페이지</br>4. 공통컴포넌트|
-|이길종|Back-End|https://github.com/Jongleee|1. CICD / 무중단배포</br>2. 로그인(일반, 소셜)</br>3. 이벤트 기능(스케줄러, 랜덤뽑기)</br>4. 커뮤니티 검색|
+|이길종|Back-End|https://github.com/Jongleee|1. CICD / 무중단배포</br>2. 로그인(일반, 소셜)</br>3. 스케줄러</br>4. 커뮤니티 검색|
 |박준기|Front-End|https://github.com/byjgpark|[부리더]</br>1. 커뮤니티 CRUD</br>2. To Do 정렬 코드 변경 </br>3. 알림 기능(간단한 알림 테스트 O , 프로젝트에 구현은 X)|
 |김자성|Front-End|https://github.com/jaseongkim|1. 채팅(WebSocket, Redis)</br>2. 친구추가 기능</br>3. To-do 리스트</br>4. 캐릭터 및 아이템 기능|
 |조은진|DESIGNER||1. 소개페이지</br>2. 투두리스트페이지</br>3. 커뮤니티 페이지</br>4. 친구목록페이지</br>5. 채팅페이지</br>6. 캐릭터선택페이지</br>7.이벤트 배너 및 상세페이지|
@@ -53,9 +53,10 @@ Planit에서 To-do를 완료하고 행성을 키워보세요!
 ![메인 페이지/커스텀](https://user-images.githubusercontent.com/108917552/194225588-8974e707-3d0f-47a9-9229-91b3775b3b3a.png)
 
 ### 😃 계획 작성, 목표 달성을 위한 TO-DO 리스트 작성
-- 오늘 얻을 수 있는 행성을 볼 수 있고, 다음 단계의 행성을 얻기 위해 얼마나 더 달성해야 하는지 알 수 있음
-- 메모기능
-- 투두 작성은 버튼 없이 할 수 있음
+- 페이지 설명
+    - 오늘 얻을 수 있는 행성을 볼 수 있고, 다음 단계의 행성을 얻기 위해 얼마나 더 달성해야 하는지 알 수 있음
+    - 메모기능
+    - 투두 작성은 버튼 없이 엔터나 다른 곳을 클릭하여 저장할 수 있음
 
 ![Todo 리스트](https://user-images.githubusercontent.com/108917552/194226040-6ce43d99-72c1-4b07-8c73-a5200296b787.png)
 
@@ -65,8 +66,9 @@ Planit에서 To-do를 완료하고 행성을 키워보세요!
 - 페이지 설명
     - 닉네임 중복이 가능하며, 프로필 사진을 설정할 수 있음.
     - 비밀번호 변경  
+    - 로그아웃 가능
     
-![프로필](https://user-images.githubusercontent.com/108917552/194222300-8fc554b4-52cb-40f4-9d25-3e5f7b97327f.png))
+![프로필](https://user-images.githubusercontent.com/108917552/194222300-8fc554b4-52cb-40f4-9d25-3e5f7b97327f.png)
 
 ### 통계
 ![일/주/월/년](https://user-images.githubusercontent.com/108917552/194226301-751b6d8f-301e-435c-acaf-e6813a6997b3.png)
@@ -123,13 +125,10 @@ Planit에서 To-do를 완료하고 행성을 키워보세요!
 | 사용 기술 | 기술 선정 이유 및 설명 |
 | --- | --- |
 | spring-security | 인증 및 리소스 권한을 직접 소스로 만들게 되면 많은시간이 소요되기 때문에 사용 |
-| spring-mail | 이메일 인증 관련 |
 | oauth2 | 소셜 로그인  |
-| websocket | • 양방향 통신이 필요한 채팅 기능을 구현하기 위해 선정</br>• 요청이 오면 응답을 하는 http 프로토콜과 달리 연결상태를 유지하여 실시간 상호작용 가능</br>• Polling, Long Polling, Streaming 방식으로 비슷한 효과를 보일 수는 있지만, 이들은 불필요한 트래픽이 야기함. |
 | stomp | • Spring Framework 에서 사용 가능( 써본적 없는 NodeJs 를 배워서 하는 것 보다 Spring 에서 구현해 보는 것이 더 좋다고 판단 )</br>• pub/sub 방식으로 작동해 송/수신 처리가 명확</br>• 여러 브로커를 사용 가능 (메모리, Rabbitmq, Kafka, Redis 등등) |
 | Querydsl | • 문자가 아닌 코드로 쿼리를 작성함으로써, 컴파일 시점에 문법 오류를 쉽게 확인할 수 있다.</br>• 자동 완성 등 IDE의 도움을 받을 수 있다.</br>• 동적인 쿼리 작성이 편리하다.</br>• 쿼리 작성 시 제약 조건 등을 메서드 추출을 통해 재사용할 수 있다. |
 | aws-s3 upload  | • 저장 용량이 무한대이고 파일 저장에 최적화되어 있다. 용량을 추가하거나 성능을 높이는 작업이 필요 없음</br>• 다른 설치 파일 없이 HTTP 프로토콜로 파일 업로드/다운로드 처리 가능</br>• 비용이  저렴 |
-| MySQL Full Text Search(MATCH ~ AGAINST) | • LIKE 검색 개선 |
 | JMeter | • 부하 테스트 |
 | Github Action | • 코드를 배포해야하는 상황이 빈번히 발생하고 배포 시에 잠깐 서버가 중단되는 상황을 개선하기 위해 고려함.</br>• Jenkins와 Github Action 2가지를 고려했지만 Jenkins 를 사용하려면 도커에 설치해야 함. 더불어, 여러 절차가 필요</br>• Github Action 은 설치 없이 간단하게 적용 할 수 있었기에 같은 기능을 한다면 간단하게 적용할 수 있는 Github Action을 선택함. |
 
