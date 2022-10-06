@@ -30,9 +30,9 @@ Planit에서 To-do를 완료하고 행성을 키워보세요!
 |신원혁|Back-End|https://github.com/god1hyuk|[리더]</br>1. CICD/무중단배포 </br>2. 로그인/회원가입/온보딩 </br>3. 메인페이지 </br>4. 채팅 </br>5. 친구목록/친구페이지 </br>6. 알림 7.인터셉터 로직|
 |박종익|Back-End|https://github.com/ParkJong-ic|1. 투두 페이지</br>2. 커뮤니티 페이지</br>3. 이벤트페이지</br>4. 공통컴포넌트|
 |이길종|Back-End|https://github.com/Jongleee|1. CICD / 무중단배포</br>2. 로그인(일반, 소셜)</br>3. 스케줄러</br>4. 커뮤니티 검색|
-|박준기|Front-End|https://github.com/byjgpark|[부리더]</br>1. 커뮤니티 CRUD</br>2. To Do 정렬 코드 변경 </br>3. 알림 기능(간단한 알림 테스트 O , 프로젝트에 구현은 X)|
-|김자성|Front-End|https://github.com/jaseongkim|1. 채팅(WebSocket, Redis)</br>2. 친구추가 기능</br>3. To-do 리스트</br>4. 캐릭터 및 아이템 기능|
-|조은진|DESIGNER||1. 소개페이지</br>2. 투두리스트페이지</br>3. 커뮤니티 페이지</br>4. 친구목록페이지</br>5. 채팅페이지</br>6. 캐릭터선택페이지</br>7.이벤트 배너 및 상세페이지|
+|박준기|Front-End|https://github.com/byjgpark|[부리더]</br>1. Todo CRUD</br>2. 리포트 & 통계 구현 </br>3. 각 페이지 Navi 구현 </br>4. 날짜 로직 구성|
+|김자성|Front-End|https://github.com/jaseongkim|1. 로그인/회원가입(유효성검사) 구현</br>2. 카테고리 CRUD</br>3. 카카오 로그인 구현</br>4. 타이머 구현|
+|조은진|DESIGNER||1. 앱 로고</br>2. UX/UI 디자인</br>3. 각종 행성 디자인</br>4. 앱 가이드라인 디자인</br>5. 각 페이지 디자인|
 
 ## 🎁 주요 기능
 
@@ -79,6 +79,7 @@ Planit에서 To-do를 완료하고 행성을 키워보세요!
 
 ## 🔨 아키텍처 / 기술 스택
 ### 기술 스택
+#### BackEnd
 <div>
   <img src="https://img.shields.io/badge/springBoot-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
   <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
@@ -96,6 +97,20 @@ Planit에서 To-do를 완료하고 행성을 키워보세요!
   <img src="https://camo.githubusercontent.com/c0f71772804c86d0f144ce923027aff25e8d761c6b791d2de6698607e21c5465/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f677261646c652d3032333033413f7374796c653d666f722d7468652d6261646765266c6f676f3d677261646c65266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/gradle-02303A?style=for-the-badge&amp;logo=gradle&amp;logoColor=white" style="max-width: 100%;">
 </div>
 
+#### FrontEnd
+<div>
+  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+  <img src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styled-components&logoColor=pink">   
+  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">   
+  <img src="https://img.shields.io/badge/kakao login-FFCD00?style=for-the-badge&logo=kakao&logoColor=black">
+  <img src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white">
+  <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
+  <img src="https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=Axios&logoColor=white"/>
+</div>
+
 ### 아키텍처
 ![Planit 아키텍쳐](https://user-images.githubusercontent.com/81502140/193482035-e4e88dd6-440a-4983-9a67-809c53ee731b.png)
 <details>
@@ -104,16 +119,11 @@ Planit에서 To-do를 완료하고 행성을 키워보세요!
 
 | 사용 기술 | 기술 선정 이유 및 설명 |
 | --- | --- |
-| Type Script | • 타입을 미리 지정하여 예상하지 못한 오류가 뜨지 않도록 해줌. 오류가 발생하면 어떤 오류인지 조금이나마 더 정보를 얻을 수 있음.</br>• state나 api의 데이터를 정확하고, 안전하게 사용할 수 있었음. 투두 페이지의 필터나 정렬타입, select box의 value 등에 string이 아닌 literal type을 선언해 사용했음. |
-| PWA | • 웹앱으로 홈화면에 아이콘을 설치해 앱처럼 사용할 수 있게하는 기술.</br>• native 앱과 최적화와 성능면에서 차이는 있지만, 우리 프로젝트 특성상 웹보다는 앱처럼 이용하는 것이 사용자 접근성이 높을 것 같아 선택했음</br>• 캐싱이 되기 때문에 오프라인에서도 접속은 가능하다. https에서만 사용이 가능하고, push 기능도 이용할 수 있다. 이를 통해 사용자에게 알림도 보낼 수 있다. |
-| Recoil , React-Query | • 전역상태 관리는 Recoil, 서버와 클라이언트 간 비동기 작업에는 React Query를 사용했음.</br>• Redux는 타임머신 기능이 있지만 작은 기능이여도 액션등을 필수로 만들어야함. 액션 타입, 리듀서, 액션 생성함수 등 보일러 플레이트 코드가 반복적으로 생성되므로 사용하지 않았음.</br>• Recoil은 store 하나로 어디서든 쉽게 데이터를 가져오고, 상태를 변화할 수 있어서 사용했음.</br>• React Query는 목적에 맞게 client state와 server state를 분리할수 있고 useQuery hook을 이용해서 데이터를 가져오는 것에 대한 성공, 로딩, 에러 콜백을 쉽게 할 수 있음. 그리고 리패칭, 캐싱 등의 기능을 쉽게 제공받을 수 있어서 사용했음. 커뮤니티같은 목록형 정보를 fresh하게 관리하여 새로운 정보를 잘 받아올 수 있음. |
-| Axios | • Async / Await 등을 이용하여 통신 순서를 지정할 수 있으며, then보다 깔끔히 작성 가능. |
-| Web Socket | • 웹 소켓은 Statefull protocol임 </br>• 그 중, socket.js를 사용하여 양방향 통신을 가능하게 해줌 |
-| Chart JS | •  경험치 바 요구사항 : “가운데가 투명하며 둘레의 일부분이 뚫려야함, 그라데이션으로 게이지바가 채워져야함, 애니메이션 효과 필요” 있었음.</br>• 캐릭터 경험치바에 차트 JS를 사용했으며, 그라디언트에는 캔버스 함수를 활용</br>• CSS에서는 원하는 만큼 둘레를 뚫기 어렵고, 경험치에 따른 애니메이션 효과를 주기 어려워서 배제함.</br>• Canvas는 구현 가능하지만, 애니메이션 효과와 그라데이션을 위해 공부해야하는 부분이 많아서 프로젝트 시간동안 터득하기 어려웠다. 이부분이 아쉽고, 3D 인터랙션을 공부하고싶어서 실전프로젝트 종료 후 공부할 예정이다. |
-| LightHouse | • 원하는 페이지의 느린 속도 원인을 파악하는데 도움을 주고, 해결 전후의 성능, 접근성, 권장사항, 검색 엔진 최적화를 파악하는데 사용 |
-| Styled-Components | • 자주 사용하는 디자인을 미리 컴포넌트화해서 사용 가능. </br>• 코드를 깔끔하게 작성 가능 |
-| ESLINT | • 팀 내 정해놓은 규칙에 따라 코딩을 함으로써 미리 오류를 잡을 수 있고, 협업에 도움을 줌. |
-| React Icon | • 디자이너님의 아이콘과 같은 경우 아이콘 용량을 줄이기 위해 사용 |
+| React               | Component 단위의 작성을 통해 UI를 구성하는 개별적인 뷰단위의 개발을 하여 하나의 컴포넌트를 여러 부분에 다중 사용할수 있게 만들거 생산성과 유지 보수를 용이하게 하고 JSX를 사용해 컴포넌트를 쉽게 구성할수 있도록 해주며 Vitual DOM을 이용해 연산 비용을 줄일수 있기에 React 라이브러리를 사용하게 되었습니다. |
+| React-Redux Toolkit | React 상태관리를 전역으로 Redux store에 저장해 각각 기능 마다 Slice 로 구분해 서버에온 데이터들을 관리해주기 위해서 서 React-Redux ToolKit 을 사용했습니다.                                                                                                                                                   |
+| Context API         | 단순히 데이터를 Redux store와 Slice 로 dispatch 시킬필요 없이 하위 컴포넌트에 전역으로 데이터를 내려주기 위해서 Context API를 사용했습니다.                                                                                                                                                                   |
+| Styled-Component    | CSS 를 컴포넌트 단위로 쪼갤수 있어 사용 빈도가 높은 CSS를 재사용할수 있고 다양한 스타일들을 분기처리를 할수있어 Styled-Component 를 사용했습니다.                                                                                                                                                             |
+| Axios               | 우선 Fetch 같은 경우 호환성이 떨어져 웹브라우저가 구버전일 경우 지원하지 않는 경우가 있으며, Fetch에 비해 객체의 형태로 Param이나 Query를 성정할수 있어 가독성이 뛰어나며, 따로 JSON형태의 변환이 필요없이 자동 변환이 되고 개선된 error handling의 성능을 가지고 있기에 Axios를 사용하게 되었습니다.         |
 
 </div>
 </details>
