@@ -153,6 +153,10 @@ Planit에서 To-do를 완료하고 행성을 키워보세요!
 ![image](https://user-images.githubusercontent.com/81502140/194344080-cab3e1ac-ce8d-4ef2-831a-d764937f76cb.png)
 
 ## UT 피드백 이후 추가&개선 기능
+![피드백반영](https://user-images.githubusercontent.com/77233579/194344659-f765e6c5-fe8c-46fa-b325-70563ab2e1d1.jpg)
+![피드백반영2](https://user-images.githubusercontent.com/77233579/194344667-c7fcbd1c-1be9-4d15-86ee-84c3b8fab098.jpg)
+![피드백반영3](https://user-images.githubusercontent.com/77233579/194344674-3690dc49-341c-43ee-9d59-e4a1c218e9f9.jpg)
+
 
 |  | 주요 피드백 | 처리 내용 |
 | --- | --- | --- |
