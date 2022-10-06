@@ -27,8 +27,7 @@ Planit에서 To-do를 완료하고 행성을 키워보세요!
 ## 🙏 팀원
 |이름|포지션|깃허브 or 블로그|담당|
 |:---:|:---:|:---:|:---|
-|신원혁|Back-End|https://github.com/god1hyuk|[리더]</br>1. Week, Day 페이지 행성 조회</br>2. QueryDsl을 활용한 월별 리포트 조회 </br>3. 캘린더에 필요한 데이터 조회
-</br>4. todo 페이지 |
+|신원혁|Back-End|https://github.com/god1hyuk|[리더]</br>1. Week, Day 페이지 행성 조회</br>2. QueryDsl을 활용한 월별 리포트 조회 </br>3. 캘린더에 필요한 데이터 조회</br>4. todo 페이지 |
 |박종익|Back-End|https://github.com/ParkJong-ic|1. 카테고리 페이지 조회</br>2. 마이페이지 조회</br>3. 일별 통계 조회</br>4. 달성률 및 집중도 테이블 |
 |이길종|Back-End|https://github.com/Jongleee|1. CICD / 무중단배포</br>2. 로그인(일반, 소셜)</br>3. 스케줄러</br>4. 유저 정보 페이지</br>5. AWS이미지 업로드 |
 |박준기|Front-End|https://github.com/byjgpark|[부리더]</br>1. Todo CRUD</br>2. 리포트 & 통계 구현 </br>3. 각 페이지 Navi 구현 </br>4. 날짜 로직 구성|
