@@ -13,7 +13,14 @@ PLANIT은 계획을 뜻하는 PLAN 과 행성을 뜻하는 PLANET의 뜻을 포�
 [소개 영상](예정)  
 
 ## 🎬 프로젝트 소개
--  우리는 하루에도 수 많은 일들을 합니다. 할 일을 쉽게 기록하고 얼마나 잘 했는지 확인할 수 있는 것이 있다면 얼마나 좋을까요? 우리의 서비스 Planit은 TODO를 수행할 원동력을 제공할 수 있도록 도와주는 여러분들의 친구입니다.
+우리는 하루에도 수 많은 일들을 합니다.<br>
+할 일을 쉽게 기록하고 얼마나 잘 했는지 확인할 수 있다면 얼마나 좋을까요?<br>
+Planit은 할 일을 완료할 때마다 행성이 자라나면서 동기부여를 제공하는 To-do list 서비스입니다.
+
+- 계획적인 하루를 보내고 싶으신가요?<br>
+- To-do list를 작성만 하고 실행하지 않은 적이 있나요?
+
+Planit에서 To-do를 완료하고 행성을 키워보세요!
 
 ## ⏳ 프로젝트 기간
 ### 2022년 9월 2일 - 2022년 10월 7일
@@ -34,23 +41,23 @@ PLANIT은 계획을 뜻하는 PLAN 과 행성을 뜻하는 PLANET의 뜻을 포�
 - 페이지 설명
     - 소셜 or 일반로그인
     - 온보딩페이지(회원가입시 온보딩 페이지를 통해 플랜잇이 어떠한 서비스인지 알 수 있음)
-    - PWA 다운가능  
     
-![로그인/회원가입](https://user-images.githubusercontent.com/108917552/194221792-4e22f172-930c-4ad3-84cf-ab36f8ca6b42.png))
+![로그인/회원가입/온보딩페이지](https://user-images.githubusercontent.com/108917552/194225270-f8ce3507-6bc0-480b-be6d-733ce0db40dc.png)
 
 ### 😃 메인 페이지 
 - 페이지 설명
     - 메인페이지에서 투두 달성을 통해 얻을 수 있는 행성을 볼 수 있습니다
     - 행성은 달성수에 따라 변화함으로써, 사용자에게 To Do 달성을 더 재미있게 할 수 있도록 흥미와 동기를 부여함.  
+    - 행성 커스텀 기능
     
-![메인 페이지](https://user-images.githubusercontent.com/108917552/194222122-d5fb66c6-3998-4bee-8641-ab3162a4daf9.png)
+![메인 페이지/커스텀](https://user-images.githubusercontent.com/108917552/194225588-8974e707-3d0f-47a9-9229-91b3775b3b3a.png)
 
 ### 😃 계획 작성, 목표 달성을 위한 TO-DO 리스트 작성
 - 오늘 얻을 수 있는 행성을 볼 수 있고, 다음 단계의 행성을 얻기 위해 얼마나 더 달성해야 하는지 알 수 있음
 - 메모기능
 - 투두 작성은 버튼 없이 할 수 있음
 
-![Todo 리스트](https://user-images.githubusercontent.com/108917552/194222247-0aa1ae20-a164-4bc0-8626-8841deeb9211.png)
+![Todo 리스트](https://user-images.githubusercontent.com/108917552/194226040-6ce43d99-72c1-4b07-8c73-a5200296b787.png)
 
 
 ### 😃 나만의 프로필 사진과 닉네임
@@ -60,6 +67,12 @@ PLANIT은 계획을 뜻하는 PLAN 과 행성을 뜻하는 PLANET의 뜻을 포�
     - 비밀번호 변경  
     
 ![프로필](https://user-images.githubusercontent.com/108917552/194222300-8fc554b4-52cb-40f4-9d25-3e5f7b97327f.png))
+
+### 통계
+![일/주/월/년](https://user-images.githubusercontent.com/108917552/194226301-751b6d8f-301e-435c-acaf-e6813a6997b3.png)
+
+### 리포트
+![리포트](https://user-images.githubusercontent.com/108917552/194226447-9bd9698b-4451-429a-9f92-50ca15524ba4.png)
 
 
 ## 🔨 아키텍처 / 기술 스택
